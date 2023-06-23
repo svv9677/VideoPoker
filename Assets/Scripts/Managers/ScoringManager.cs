@@ -102,7 +102,7 @@ namespace VideoPoker
 					count++;
 			}
 
-			return (count >= 2);
+			return (count >= 1);
 		}
 				
 
@@ -128,7 +128,7 @@ namespace VideoPoker
 			for(int i=0; i<cardsInHand.Count; i++)
             {
 				Card card = cardsInHand[i];
-				if (card.SuitIndex == 3 && card.RankValue >= 11)
+				if (card.SuitIndex == 3 && card.RankValue >= 10)
 					royalCount++;
             }
 			if(sequential && unique && sameSuit && royalCount == 5)

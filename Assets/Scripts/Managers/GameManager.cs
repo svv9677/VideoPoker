@@ -135,6 +135,25 @@ namespace VideoPoker
 								cardsThisRound[i] = pendingCards[0];
                             }
                         }
+
+						// Debug to inject our cards
+						/*cardsThisRound.Clear();
+						Card card1 = new Card();
+						Card card2 = new Card();
+						Card card3 = new Card();
+						Card card4 = new Card();
+						Card card5 = new Card();
+						card1.DefineCard(Rank.A, Suit.Spades);
+						cardsThisRound.Add(card1);
+						card3.DefineCard(Rank.Ten, Suit.Spades);
+						cardsThisRound.Add(card3);
+						card2.DefineCard(Rank.A, Suit.Diamonds);
+						cardsThisRound.Add(card2);
+						card4.DefineCard(Rank.Two, Suit.Spades);
+						cardsThisRound.Add(card4);
+						card5.DefineCard(Rank.Three, Suit.Spades);
+						cardsThisRound.Add(card5);*/
+
 						// Now we have all cards ready to update
 						// Update Card UI
 						for (int i = 0; i < 5; i++)
